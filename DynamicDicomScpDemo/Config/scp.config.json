@@ -1,0 +1,38 @@
+{
+  "CStoreConfigurations": [
+    {
+      "StoragePath": "C:\\DICOM\\TestStoragePath\\",
+      "MailboxPath": "C:\\DICOM\\TestMailbox\\",
+      "AETitle": "TestCStore",
+      "Port": 55105,
+      "AllowedAETitles": [ "DICOMCLIENT" ]
+    },
+    {
+      "StoragePath": "C:\\DICOM\\TestStoragePath2\\",
+      "MailboxPath": "C:\\DICOM\\TestMailbox2\\",
+      "AETitle": "TestCStore2",
+      "Port": 55106,
+      "AllowedAETitles": [ "DICOMCLIENT" ]
+    }
+  ],
+  "CMoveConfigurations": [
+    {
+      "AETitle": "TestCMove",
+      "Port": 55107,
+      "AllowedAETitles": [ "DICOMCLIENT" ],
+      "DestinationAETitle": "TestDestination",
+      "DestinationHost": "localhost",
+      "DestinationPort": 12345,
+      "DestinationUseTls": false,
+      "FinderService": "DicomImageFinderService"
+    }
+  ],
+  "CFindConfigurations": [
+    {
+      "AETitle": "TestCFind",
+      "Port": 55108,
+      "AllowedAETitles": [ "DICOMCLIENT" ],
+      "FinderService": "DicomImageFinderService"
+    }
+  ]
+}
